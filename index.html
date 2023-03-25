@@ -8,6 +8,7 @@
     <title>Pizza order</title>
   </head>
   <body>
+    <main>
     <form>
       <h1>Order</h1>
       <input type="text" placeholder="Tell us your name" id="name" />
@@ -61,12 +62,15 @@
     </form>
 
     <div id="order">
+      <div>
       <p>Name: <span id="order_name"></span></p>
       <p>Size: <span id="order_size"></span></p>
       <p>Toppings: <span id="order_toppings"></span></p>
       <p>Delivery: <span id="order_delivery"></span></p>
       <p>Total price: <span id="order_price"></span></p>
     </div>
-    <script src="main.js"></script>
+    </div>
+  </main>
   </body>
+  <script src="main.js"></script>
 </html>
