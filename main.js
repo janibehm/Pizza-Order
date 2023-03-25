@@ -67,7 +67,7 @@ const myFunctjon = () => {
 
   order_name.textContent = customerName;
   order_toppings.textContent = toppingsResult.join(', ');
-  order_price.textContent = price;
+  order_price.textContent = price + `€`;
 };
 
 form.addEventListener('input', myFunctjon);
