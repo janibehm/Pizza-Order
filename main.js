@@ -12,7 +12,7 @@ const order_toppings = document.querySelector('#order_toppings');
 const order_delivery = document.querySelector('#order_delivery');
 const order_price = document.querySelector('#order_price');
 
-const myFunctjon = () => {
+const addingText = () => {
   let customerName = customer.value;
   let sizeResult = '';
   let sizeText = '';
@@ -70,4 +70,4 @@ const myFunctjon = () => {
   order_price.textContent = price + `€`;
 };
 
-form.addEventListener('input', myFunctjon);
+form.addEventListener('input', addingText);
