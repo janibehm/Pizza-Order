@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza order</title>
+  </head>
+  <body>
+    <form>
+      <h1>Order</h1>
+      <input type="text" placeholder="Tell us your name" id="name" />
+
+      <h2>Size:</h2>
+      <div>
+        <input type="radio" name="size" value="two" id="size2" />
+        <label for="size2">for two 7,50€</label>
+      </div>
+      <div>
+        <input type="radio" name="size" value="four" id="size4" />
+        <label for="size4">for four 10,50€</label>
+      </div>
+      <div>
+        <input type="radio" name="size" value="six" id="size6" />
+        <label for="size6">for six 12,50€</label>
+      </div>
+      <div>
+        <input type="radio" name="size" value="eight" id="size8" />
+        <label for="size8">for eight 15,50€</label>
+      </div>
+
+      <h2>Toppings:</h2>
+      <div>
+        <input type="checkbox" value="pepperoni" id="pepperoni" />
+        <label for="pepperoni">pepperoni</label>
+      </div>
+      <div>
+        <input type="checkbox" value="sausage" id="sausage" />
+        <label for="sausage">sausage</label>
+      </div>
+      <div>
+        <input type="checkbox" value="onion" id="onion" />
+        <label for="onion">onion</label>
+      </div>
+      <div>
+        <input type="checkbox" value="cheese" id="cheese" />
+        <label for="cheese">cheese</label>
+      </div>
+      <div>
+        <input type="checkbox" value="chicken" id="chicken" />
+        <label for="chicken">chicken</label>
+      </div>
+      <h2>Delivery:</h2>
+      <select name="delivery" id="delivery">
+        <option selected disabled value="empty">Select delivery method:</option>
+        <option value="home">Delivery to home</option>
+        <option value="eat in">Eat in</option>
+        <option value="pickup">Pickup food</option>
+      </select>
+    </form>
+
+    <div id="order">
+      <p>Name: <span id="order_name"></span></p>
+      <p>Size: <span id="order_size"></span></p>
+      <p>Toppings: <span id="order_toppings"></span></p>
+      <p>Delivery: <span id="order_delivery"></span></p>
+      <p>Total price: <span id="order_price"></span></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
